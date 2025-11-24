@@ -368,6 +368,11 @@ docker compose up --build frontend
 Visit:
 👉 http://localhost:3000
 
+Login Creds:
+admin: admin123
+<email>: teacher123
+<email>: student123
+
 ## 🟩 Run Backend Docker Only
 ```
 docker compose up --build backend
