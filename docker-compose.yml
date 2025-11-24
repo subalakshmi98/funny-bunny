@@ -1,0 +1,20 @@
+services:
+  backend:
+    build: ./Backend
+    container_name: backend_service
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./Backend/src/main/db:/app/src/main/db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:sqlite:/app/src/main/db/maplewood_school.sqlite
+
+  frontend:
+    build: ./Frontend
+    container_name: frontend_service
+    ports:
+      - "3000:80"
+    environment:
+      VITE_API_URL: http://localhost:8080
+    depends_on:
+      - backend

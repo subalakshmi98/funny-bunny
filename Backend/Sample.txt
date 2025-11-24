@@ -1,0 +1,36 @@
+http://localhost:8080/api/v1/semesters
+http://localhost:8080/api/v1/teachers
+
+challenge 1:
+curl -X POST "http://localhost:8080/api/schedule/generate?semesterId=1"
+To get schedule:
+http://localhost:8080/api/schedule/1
+http://localhost:8080/api/schedule/teacher/1
+http://localhost:8080/api/v1/schedule/courses/1
+
+challenge 2:
+Enroll a student in a course section:
+curl -X POST http://localhost:8080/api/enrollment \
+  -H "Content-Type: application/json" \
+  -d '{
+        "studentId": 303,
+        "courseId": 14,
+        "semesterId":1
+      }'
+To get schedule:
+http://localhost:8080/api/enrollment/student/303/schedule?semesterId=1
+Get eligible sections for a student:
+http://localhost:8080/api/enrollment/student/303/eligible?semesterId=1
+
+Get student academic progress:
+http://localhost:8080/api/student/academic/303/progress
+
+Student transcript:
+http://localhost:8080/api/student/academic/303/transcript
+
+Swagger:
+http://localhost:8080/swagger-ui/index.html
+
+
+
+

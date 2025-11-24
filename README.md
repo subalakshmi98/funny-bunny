@@ -264,7 +264,7 @@ Uses aggregation, conflict detection, and utilization percentage formulas.
 
 1. Clone the repo:
     ```
-    
+    https://github.com/subalakshmi98/funny-bunny/
     ```
 
 2. Build the project:
