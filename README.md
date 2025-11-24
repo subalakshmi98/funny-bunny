@@ -297,10 +297,11 @@ You can find the API documentation at `http://localhost:8080/swagger-ui.html` wh
 ## Available Scripts
 
 In the project directory, you can run:
-
-### `npm install`
-### `npm run build`
-### `npm run preview`
+    ```
+    npm install
+    npm run build
+    npm run preview
+    ```
 
 Runs the app in the development mode.
 Open [http://localhost:4173/](http://localhost:4173/) to view it in your browser.
@@ -308,11 +309,15 @@ Open [http://localhost:4173/](http://localhost:4173/) to view it in your browser
 The page will reload when you make changes.
 You may also see any lint errors in the console.
 
-### `npm test`
+```
+npm test
+```
 
 Launches the test runner in the interactive watch mode.
 
-### `npm run build`
+```
+npm run build
+```
 
 Builds the app for production to the `build` folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -320,10 +325,10 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-# 🐳 Docker Support
+## 🐳 Docker Support
 This project contains a Spring Boot backend and a React + Vite frontend, both fully containerized using Docker and runnable with Docker Compose.
 
-# 🗂 Folder Structure
+## 🗂 Folder Structure
 
 project-root/
 │
@@ -339,31 +344,39 @@ project-root/
 │
 └── docker-compose.yml
 
-# 🐳 Running With Docker Compose (Recommended)
+## 🐳 Running With Docker Compose (Recommended)
 
 From the project root, run:
-### `docker compose up --build`
+```
+docker compose up --build
+```
 
 After startup:
 Frontend: http://localhost:3000
 Backend: http://localhost:8080
 
 Stop containers:
-### `docker compose down`
+```
+docker compose down
+```
 
-# 🟦 Run Frontend Docker Only
-### `docker compose up --build frontend`.
+## 🟦 Run Frontend Docker Only
+```
+docker compose up --build frontend
+```
 
 Visit:
 👉 http://localhost:3000
 
-# 🟩 Run Backend Docker Only
-### `docker compose up --build backend`
+## 🟩 Run Backend Docker Only
+```
+docker compose up --build backend
+```
 
 Visit API:
 👉 http://localhost:8080
 
-# ⚙️ Environment Notes
+## ⚙️ Environment Notes
 Backend
 
 Uses SQLite file stored at:
@@ -373,13 +386,13 @@ Frontend
 Calls backend using:
 VITE_API_URL=http://localhost:8080
 
-# ✅ Requirements
+## ✅ Requirements
 
 Docker
 Docker Compose
 
 No other local setup is required.
 
-# 🎓 Final Notes
+## 🎓 Final Notes
 
 This system provides a robust foundation for automated scheduling, realistic academic progress analysis, and modern school administration workflows.
