@@ -7,7 +7,7 @@ services:
     volumes:
       - ./Backend/src/main/db:/app/src/main/db
     environment:
-      SPRING_DATASOURCE_URL: jdbc:sqlite:/app/src/main/db/maplewood_school.sqlite
+      SPRING_DATASOURCE_URL: jdbc:sqlite:src/main/db/maplewood_school.sqlite
 
   frontend:
     build: ./Frontend
