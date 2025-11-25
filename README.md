@@ -250,9 +250,7 @@ Uses aggregation, conflict detection, and utilization percentage formulas.
 
 # ▶️ Getting Started
 
-## Backend
-
-## Getting Started
+## 🚀 Backend — Local Run
 ### Prerequisites
 
 - Java 11+
@@ -286,9 +284,7 @@ The server will start, and you can access the API at `http://localhost:8080`.
 You can find the API documentation at `http://localhost:8080/swagger-ui.html` when the server is running.
 
 
-## Frontend
-
-## Getting Started
+## 💻 Frontend — Local Run
 ### Prerequisites
 
 - React + Typescript
@@ -326,24 +322,8 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-## 🐳 Docker Support
+## 🐳 Docker — Build & Run
 This project contains a Spring Boot backend and a React + Vite frontend, both fully containerized using Docker and runnable with Docker Compose.
-
-## 🗂 Folder Structure
-
-project-root/
-│
-├── Backend/
-│   ├── Dockerfile
-│   ├── pom.xml
-│   └── src/...
-│
-├── Frontend/
-│   ├── Dockerfile
-│   ├── package.json
-│   └── src/...
-│
-└── docker-compose.yml
 
 ## 🐳 Running With Docker Compose (Recommended)
 
@@ -381,6 +361,18 @@ docker compose up --build backend
 
 Visit API:
 👉 http://localhost:8080
+
+## Rebuild containers 
+```
+docker compose down
+docker compose build backend
+docker compose build frontend
+```
+
+## Start all services
+```
+docker compose up
+```
 
 ## ⚙️ Environment Notes
 Backend
