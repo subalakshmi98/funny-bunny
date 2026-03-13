@@ -1,8 +1,8 @@
-# 📘 Maplewood Academic Scheduling System
+# 📘 Academic Scheduling System
 
 ## 🚀 Overview
 
-The **Maplewood Academic Scheduling System** is a full‑stack platform designed to modernize academic scheduling, automate course/teacher/classroom assignments, and provide student‑friendly tools for enrollment and progress tracking.
+The **Academic Scheduling System** is a full‑stack platform designed to modernize academic scheduling, automate course/teacher/classroom assignments, and provide student‑friendly tools for enrollment and progress tracking.
 
 This project includes:
 
